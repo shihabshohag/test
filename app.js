@@ -27,11 +27,11 @@ const bloodDoner = [
     id: 3,
     name: "Siam",
     age: 30,
-    group: "B-",
+    group: "B+",
     gender: "Male",
     phone: +8801706065806,
     address: "Rajshahi",
-    lastDonate: 30,
+    lastDonate: 95,
     donateTime: 15,
     donars: ["one", "two", "three"],
   },
@@ -40,7 +40,7 @@ const bloodDoner = [
     name: "Farjana",
     age: 19,
     group: "AB+",
-    gender: "FeMale",
+    gender: "Female",
     phone: +8801750025806,
     address: "Sirahganj",
     lastDonate: 180,
@@ -52,7 +52,7 @@ const bloodDoner = [
     name: "Raka",
     age: 25,
     group: "AB-",
-    gender: "FeMale",
+    gender: "Female",
     phone: +8801750905806,
     address: "Dhaka",
     lastDonate: 110,
@@ -64,36 +64,84 @@ const bloodDoner = [
     name: "tuli",
     age: 16,
     group: "B-",
-    gender: "FeMale",
+    gender: "Female",
     phone: +8801750026606,
     address: "Barishal",
     lastDonate: 0,
     donateTime: 0,
     donars: [""],
   },
+  {
+    id: 7,
+    name: "Kashem",
+    age: 50,
+    group: "A-",
+    gender: "Male",
+    phone: +8801750026606,
+    address: "Noakhali",
+    lastDonate: 100,
+    donateTime: 3,
+    donars: ["One", "two", "three"],
+  },
+  {
+    id: 8,
+    name: "Rahim",
+    age: 35,
+    group: "AB-",
+    gender: "Male",
+    phone: +8801750024406,
+    address: "Barishal",
+    lastDonate: 130,
+    donateTime: 3,
+    donars: ["One", "two", "three"],
+  },
+  {
+    id: 9,
+    name: "Sabana",
+    age: 18,
+    group: "AB+",
+    gender: "Female",
+    phone: +8801750026606,
+    address: "Maymansingh",
+    lastDonate: 100,
+    donateTime: 3,
+    donars: ["One", "two", "three"],
+  },
+  {
+    id: 10,
+    name: "Mim",
+    age: 18,
+    group: "B+",
+    gender: "Female",
+    phone: +8801750026606,
+    address: "Maymansingh",
+    lastDonate: 150,
+    donateTime: 3,
+    donars: ["One", "two", "three"],
+  },
 ];
-
-const search = "B-";
 
 // filter data
 
-const searchResult = bloodDoner.filter(
-  (data) => data.group === search || data.gender === search
-);
+// const searchResult = bloodDoner.filter(
+//   (data) => data.group === search || data.gender === search
+// );
 
 // final sreach result
 
-const finalResult = [];
+// const finalResult = [];
 
 // get data
 
-searchResult.forEach((item, index) => {
-  finalResult.push(item);
-});
+// searchResult.forEach((item, index) => {
+//   finalResult.push(item);
+// });
 
 // show result
 
-console.table(finalResult);
+// console.table(finalResult);
+
+// console.log(`You'er searching for ${search}`);
 
 // bloodDoner.map((item) => {
 //   if ((item.age >= 18, item.lastDonate >= 120)) {
