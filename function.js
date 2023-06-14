@@ -1,5 +1,5 @@
 // Search form
-const search = "B+";
+const search = prompt("Search for blood group");
 
 // filter data
 const searchResult = bloodDoner.filter(
